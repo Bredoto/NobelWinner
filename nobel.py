@@ -6,7 +6,8 @@ import csv
 
 
 def main():
-    with open('data.csv', newline='') as f:
+    with open('archive.csv', newline='') as f:
+    #with open('data.csv', newline='') as f:
         reader = csv.reader(f)
         for row in reader:
             print(row)
