@@ -1,22 +1,43 @@
-Year
-Category
-Prize
-Motivation
-Prize Share
-Laureate ID
-Laureate Type
-Full Name
-Birth Date
-Birth City
-Birth Country
-Sex
-Organization Name
-Organization City
-Organization Country
-Death Date
-Death City
-Death Country
+Year FLOAT(2,1) NOT NULL,
+Category CHAR(11) NOT NULL,
+Prize CHAR(11) NOT NULL,
+Motivation CHAR(11) NOT NULL,
+PrizeShare  CHAR(11) NOT NULL,
+LaureateID CHAR(11) NOT NULL,
+LaureateType CHAR(11) NOT NULL,
+FullName CHAR(11) NOT NULL,
+BirthDate CHAR(11) NOT NULL,
+BirthCity  CHAR(11) NOT NULL,
+BirthCountry CHAR(11) NOT NULL,
+Sex CHAR(11) NOT NULL,
+OrganizationName CHAR(11) NOT NULL,
+OrganizationCity CHAR(11) NOT NULL,
+OrganizationCountry CHAR(11) NOT NULL,
+DeathDate CHAR(11) NOT NULL,
+DeathCity  CHAR(11) NOT NULL,
+DeathCountry CHAR(11) NOT NULL
 
+
+
+
+Year FLOAT(2,1) NOT NULL,
+Category CHAR(11) NOT NULL,
+Prize CHAR(11) NOT NULL,
+Motivation CHAR(11) NOT NULL,
+PrizeShare  CHAR(11) NOT NULL,
+LaureateID CHAR(11) NOT NULL,
+LaureateType CHAR(11) NOT NULL,
+FullName CHAR(11) NOT NULL,
+BirthDate CHAR(11) NOT NULL,
+BirthCity  CHAR(11) NOT NULL,
+BirthCountry CHAR(11) NOT NULL,
+Sex CHAR(11) NOT NULL,
+OrganizationName CHAR(11) NOT NULL,
+OrganizationCity CHAR(11) NOT NULL,
+OrganizationCountry CHAR(11) NOT NULL,
+DeathDate CHAR(11) NOT NULL,
+DeathCity  CHAR(11) NOT NULL,
+DeathCountry CHAR(11) NOT NULL
 
 
 1901,Chemistry,The Nobel Prize in Chemistry 1901,"""in recognition of the extraordinary services he has rendered by the discovery of the laws of chemical dynamics and osmotic pressure in solutions""",1/1,160,Individual,Jacobus Henricus van 't Hoff,1852-08-30,Rotterdam,Netherlands,Male,Berlin University,Berlin,Germany,1911-03-01,Berlin,Germany
