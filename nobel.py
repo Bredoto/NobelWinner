@@ -35,7 +35,7 @@ def create_database(connection, query):
 def main():
     try:
         # with open('archive.csv', newline='') as f:
-        f = open('archive.csv', newline='')
+        f = open('archive2.csv', newline='')
         reader = csv.reader(f)
 
         connection = create_connection("localhost", "root", "qazxswED4$", "NobelWinners")
@@ -49,7 +49,7 @@ def main():
             cursor.execute("SET character_set_connection=utf8mb4;")  # same as above
 
             cursor.execute(
-                "CREATE TABLE winners (Year CHAR(11) NOT NULL,Category CHAR(11) NOT NULL,Prize CHAR(254) NOT NULL,Motivation CHAR(254) NOT NULL,PrizeShare  CHAR(254) NOT NULL,LaureateID CHAR(11) NOT NULL,LaureateType CHAR(48) NOT NULL,FullName CHAR(48) NOT NULL,BirthDate CHAR(48) NOT NULL,BirthCity  CHAR(48) NOT NULL,BirthCountry CHAR(48) NOT NULL,Sex CHAR(11) NOT NULL,OrganizationName CHAR(48) NOT NULL,OrganizationCity CHAR(48) NOT NULL,OrganizationCountry CHAR(48) NOT NULL,DeathDate CHAR(48) NOT NULL,DeathCity  CHAR(48) NOT NULL,DeathCountry CHAR(48) NOT NULL)")
+                "CREATE TABLE winners (Year CHAR(11) NOT NULL,Category CHAR(11) NOT NULL,Prize CHAR(254) NOT NULL,Motivation VARCHAR (500) NOT NULL,PrizeShare  CHAR(254) NOT NULL,LaureateID CHAR(11) NOT NULL,LaureateType CHAR(48) NOT NULL,FullName CHAR(254) NOT NULL,BirthDate CHAR(48) NOT NULL,BirthCity  CHAR(48) NOT NULL,BirthCountry CHAR(48) NOT NULL,Sex CHAR(11) NOT NULL,OrganizationName CHAR(254) NOT NULL,OrganizationCity CHAR(48) NOT NULL,OrganizationCountry CHAR(48) NOT NULL,DeathDate CHAR(48) NOT NULL,DeathCity  CHAR(48) NOT NULL,DeathCountry CHAR(48) NOT NULL)")
             print("winners table is created....")
             for row in reader:
                 sql = u"""INSERT INTO NobelWinners.winners VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
